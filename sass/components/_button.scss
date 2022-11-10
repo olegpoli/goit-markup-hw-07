@@ -12,12 +12,14 @@
     letter-spacing: 0.06em;
    padding: 10px 32px;
    transition:  color  250ms cubic-bezier(0.4, 0, 0.2, 1),  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  
+   &:hover,
+   &:focus {
+     color:   var(--color-accent-text-button);
+     background-color: var(--color-accent-background-button);}
   }
   
   
   
-  .button:hover,
-  .button:focus {
-    color:   var(--color-accent-text-button);
-    background-color: var(--color-accent-background-button);}
+
   

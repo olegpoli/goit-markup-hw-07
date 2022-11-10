@@ -43,20 +43,23 @@
 
 
 
-    .photo-robota { padding-top: 0; }
- 
-    .photo-robota h2  { 
+    .photo-robota { padding-top: 0;
     
-    color: var(--color-text-title);  
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em; 
-    margin-top: auto;
-    margin-bottom: 50px;    
-  }
+      & h2  { 
+    
+        color: var(--color-text-title);  
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em; 
+        margin-top: auto;
+        margin-bottom: 50px;    
+      }
+    }
+ 
+ 
 
 
 
@@ -88,17 +91,14 @@
     transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1) ;  
     justify-content: center;
     align-items: center; 
-     }
 
-
-     .robota:hover .robota-overlay,
-     .robota:focus .robota-overlay
+    .robota:hover &,
+     .robota:focus &
       { transform: translateY(0);  }
 
 
-
-
-   .robota-overlay p {
+      
+   & p {
     margin: 0;
 padding: 0;
      font-family: 'Roboto';
@@ -111,3 +111,10 @@ padding: 0;
     text-transform: uppercase;    
     color: var(--background-color-our-team-li);  
   }
+     }
+
+
+     
+
+
+
