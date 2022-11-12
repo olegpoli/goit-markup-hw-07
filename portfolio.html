@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,32 +26,32 @@
   </head>
   <body class="page-portfolio">
     <!--шапка сайту-->
-    <header>
+    <header class="header" >
       <div class="container header__container">
         <nav class="navigation navigation__nav">
-          <a href="/" class="logo"> <span class="logo-web">Web</span>Studio</a>
-          <ul class="site-navigation list">
-            <li><a href="./index.html" class="link">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+          <a href="/" class="logo navigation__logo "> <span class="logo-web">Web</span>Studio</a>
+          <ul class="menu list">
+            <li class="menu__item" >
+              <a href="./index.html" class="menu__link  ">Студія</a>
             </li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="menu__item"><a href="./portfolio.html" class="menu__link current ">Портфоліо</a></li>
+            <li class="menu__item"><a href="" class="menu__link ">Контакти</a></li>
           </ul>
         </nav>
         <!--контактна інформація  -->
-        <ul class="site-navigation list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link linky">
-              <svg class="linky-icon" width="16px" height="12px">
+        <ul class="connect menu list">
+          <li class="connect__item">
+            <a href="mailto:info@devstudio.com" class="connect__link ">
+              <svg class=" connect__mail connect__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li>
-            <a href="tel:+380961111111" class="link linky">
-              <svg class="linky-icon" width="10px" height="16px">
+          <li class="connect__item">
+            <a href="tel:+380961111111" class="connect__link ">
+              <svg class="connect__tel connect__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
 

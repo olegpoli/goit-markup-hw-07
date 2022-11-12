@@ -12,7 +12,9 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+
+
+.is-hidden {
   /* прозорість 0 ....  2.13.40 1-відео */
   opacity: 0;
   /* прибираються кліки мишкою */
@@ -71,7 +73,7 @@ label {
   display: block;
 }
 
-.register-form-title {
+.register-form__title {
   display: block;
   font-family: "Roboto";
   font-style: normal;
@@ -85,12 +87,12 @@ label {
   margin-bottom: 12px;
 }
 
-.register-form-group {
+.register-form__group {
   margin-bottom: 20px;
   width: 448px;
 }
 
-.register-form-field {
+.register-form__field {
   display: block;
   margin-bottom: 10px;
   position: relative;
@@ -102,7 +104,7 @@ label {
   }
 }
 
-.register-form-label {
+.register-form__label {
   width: 22px;
   height: 14px;
   left: 576px;
@@ -120,7 +122,7 @@ label {
   color: #757575;
 }
 
-.register-form-input {
+.register-form__input {
   display: block;
   width: 100%;
   /* width: 408px; */
@@ -142,7 +144,7 @@ label {
   }
 }
 
-.register-form-message {
+.register-form__message {
   display: block;
   width: 100%;
   font-size: 12px;
@@ -156,17 +158,17 @@ label {
   box-sizing: border-box;
 }
 
-.register-form-icon {
+.register-form__icon {
   position: absolute;
   left: 10px;
   bottom: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .register-form-input:focus + & {
+  .register-form__input:focus + & {
     fill: #2196f3;
   }
 }
 
-.register-form-agreement {
+.register-form__agreement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,7 +180,7 @@ label {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .register-form-checkbox:checked + .register-form-icons & {
+  .register-form__checkbox:checked + .register-form__icons & {
     opacity: 1;
   }
 }
@@ -187,12 +189,12 @@ label {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .register-form-checkbox:checked + .register-form-icons & {
+  .register-form__checkbox:checked + .register-form__icons & {
     opacity: 0;
   }
 }
 
-.register-form-btn {
+.register-form__btn {
   display: block;
   margin: 30px auto 0;
   align-items: center;
@@ -218,7 +220,7 @@ label {
   }
 }
 
-.register-form-link {
+.register-form__link {
   color: #2196f3;
   border-bottom: #188ce8;
   text-decoration: underline;

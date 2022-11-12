@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+
+    <!-- <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,32 +26,32 @@
 
   <body class="page-studia">
     <!--шапка сайту-->
-    <header>
+    <header class="header" >
       <div class="container header__container">
         <nav class="navigation navigation__nav">
-          <a href="/" class="logo"> <span class="logo-web">Web</span>Studio</a>
-          <ul class="site-navigation list">
-            <li >
-              <a href="./index.html" class="link current">Студія</a>
+          <a href="/" class="logo navigation__logo "> <span class="logo-web">Web</span>Studio</a>
+          <ul class="menu list">
+            <li class="menu__item" >
+              <a href="./index.html" class="menu__link  current">Студія</a>
             </li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li class="menu__item"><a href="./portfolio.html" class="menu__link ">Портфоліо</a></li>
+            <li class="menu__item"><a href="" class="menu__link ">Контакти</a></li>
           </ul>
         </nav>
         <!--контактна інформація  -->
-        <ul class="site-navigation list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link linky">
-              <svg class="linky-icon" width="16px" height="12px">
+        <ul class="connect menu list">
+          <li class="connect__item">
+            <a href="mailto:info@devstudio.com" class="connect__link ">
+              <svg class=" connect__mail connect__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li>
-            <a href="tel:+380961111111" class="link linky">
-              <svg class="linky-icon" width="10px" height="16px">
+          <li class="connect__item">
+            <a href="tel:+380961111111" class="connect__link ">
+              <svg class="connect__tel connect__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
 
@@ -58,11 +63,11 @@
     </header>
     <!--Рішення для бізнесу hero -->
     <main>
-      <section class="hero section">
+      <section class="hero hero__mar   section">
         <div class="container">
-          <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          <h1 class="hero__title hero__title-mar " >ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <div >
-            <button type="button" class="button" data-modal-open>
+            <button type="button" class="hero__button button" data-modal-open>
               Замовити послугу
             </button>
           </div>
@@ -81,15 +86,15 @@
             <!-- створюю форму  завдання 6 -->
 
             <form name="register-form" autocomplete="on" novalidate>
-              <strong class="register-form-title"
+              <strong class="register-form__title"
                 >Залиште свої дані, ми вам передзвонимо</strong
               >
 
-              <div class="register-form-group" role="group">
-                <label class="register-form-field">
-                  <span class="register-form-label">Ім'я</span>
+              <div class="register-form__group" role="group">
+                <label class="register-form__field">
+                  <span class="register-form__label">Ім'я</span>
                   <input
-                    class="register-form-input"
+                    class="register-form__input"
                     type="text"
                     name="register-form1"
                     required
@@ -97,42 +102,42 @@
                     maxlength="7"
                   />
 
-                  <svg class="register-form-icon" width="12px" height="12px">
+                  <svg class="register-form__icon" width="12px" height="12px">
                     <use href="./images/icons.svg#icon-person-black"></use>
                   </svg>
                 </label>
-                <label class="register-form-field">
-                  <span class="register-form-label">Телефон</span>
+                <label class="register-form__field">
+                  <span class="register-form__label">Телефон</span>
                   <input
-                    class="register-form-input"
+                    class="register-form__input"
                     type="tel"
                     name="register-form2"
                     required
                     minlength="3"
                     placeholder=""
                   />
-                  <svg class="register-form-icon" width="13px" height="13px">
+                  <svg class="register-form__icon" width="13px" height="13px">
                     <use href="./images/icons.svg#icon-phone-black"></use>
                   </svg>
                 </label>
-                <label class="register-form-field">
-                  <span class="register-form-label">Пошта</span>
+                <label class="register-form__field">
+                  <span class="register-form__label">Пошта</span>
                   <input
-                    class="register-form-input"
+                    class="register-form__input"
                     required
                     type="email"
                     name="register-form3"
                   />
-                  <svg class="register-form-icon" width="15px" height="12px">
+                  <svg class="register-form__icon" width="15px" height="12px">
                     <use href="./images/icons.svg#icon-email-black"></use>
                   </svg>
                 </label>
 
-                <label class="register-form-field">
-                  <span class="register-form-label">Коментар</span>
+                <label class="register-form__field">
+                  <span class="register-form__label">Коментар</span>
 
                   <textarea
-                    class="register-form-message"
+                    class="register-form__message"
                     name="register-form4"
                     rows="5"
                     placeholder="Введіть текст"
@@ -140,15 +145,15 @@
                 </label>
               </div>
 
-              <label class="register-form-agreement">
+              <label class="register-form__agreement">
                 <input
-                  class="register-form-checkbox visually-hidden"
+                  class="register-form__checkbox visually-hidden"
                   type="checkbox"
                   name="register-form5"
                   value=""
                 />
 
-                <svg class="register-form-icons" width="16px" height="15px">
+                <svg class="register-form__icons" width="16px" height="15px">
                   <use
                     class="icon-checked"
                     href="./images/icons.svg#icon-checked"
@@ -159,12 +164,12 @@
                   ></use>
                 </svg>
 
-                <span class="register-form-desc">
+                <span class="register-form__desc">
                   Погоджуюся з розсилкою та приймаю
-                  <a class="register-form-link" href="">Умови договору </a>
+                  <a class="register-form__link" href="">Умови договору </a>
                 </span>
               </label>
-              <button class="register-form-btn" type="submit">
+              <button class="register-form__btn" type="submit">
                 Відправити
               </button>
             </form>
@@ -176,15 +181,15 @@
       <section class="feature-list section">
         <div class="container">
           <!--заголовок <h2>Наші особливості</h2> в CSS заховати щоб не було видно -->
-          <h2 class="feature-list-h2">Наші особливості</h2>
-          <ul class="list title container-feature-list">
+          <h2 class="feature-list__h2">Наші особливості</h2>
+          <ul class="list feature-list__container">
             <li class="pravylo">
               <div class="pravylo__icon">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -197,7 +202,7 @@
                 </svg>
               </div>
 
-              <h3>ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p>
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
@@ -209,7 +214,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3>ПЛАНУВАННЯ</h3>
+              <h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -220,7 +225,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -231,18 +236,18 @@
       </section>
       <!--чим займаємося-->
       <section class="photo-robota section">
-        <div class="container">
-          <h2>Чим ми займаємося</h2>
-          <ul class="list container-photo-robota">
-            <li>
-              <a href="" class="robota">
+        <div class=" section">
+          <h2 class="photo-robota__h  photo-robota__mar">Чим ми займаємося</h2>
+          <ul class="list container-photo">
+            <li class=" container-photo__desktop" >
+              <a href="" class="container-photo__robota">
                 <div class="robota-thumb">
                   <img
                     src="./images/box_1.jpg"
                     alt="photo_box_1"
                     width="370"
                     height="294"
-                    class="kartyna"
+                    class="container-photo__kartyna"
                   />
                   <div class="robota-overlay">
                     <p>ДЕСКТОПНІ ДОДАТКИ</p>
@@ -250,15 +255,15 @@
                 </div>
               </a>
             </li>
-            <li>
-              <a href="" class="robota">
+            <li class=" container-photo__applications">
+              <a href="" class="container-photo__robota">
                 <div class="robota-thumb">
                   <img
                     src="./images/box_2.jpg"
                     alt="photo_box_2"
                     width="370"
                     height="294"
-                    class="kartyna"
+                    class="container-photo__kartyna"
                   />
                   <div class="robota-overlay">
                     <p>МОБІЛЬНІ ДОДАТКИ</p>
@@ -266,15 +271,15 @@
                 </div>
               </a>
             </li>
-            <li>
-              <a href="" class="robota">
+            <li class=" container-photo__designer">
+              <a href="" class="container-photo__robota">
                 <div class="robota-thumb">
                   <img
                     src="./images/box_3.jpg"
                     alt="photo_box_3"
                     width="370"
                     height="294"
-                    class="kartyna"
+                    class="container-photo__kartyna"
                   />
                   <div class="robota-overlay">
                     <p>ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>

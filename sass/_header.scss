@@ -1,4 +1,4 @@
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -11,12 +11,8 @@ header {
   display: flex;
   align-items: center;
 }
-.logo {
-  display: flex;
-  margin-right: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
+.navigation__logo {
+    margin-right: 93px;
 }
 
 .navigation__nav {
@@ -25,9 +21,11 @@ header {
   align-items: center;
 }
 
-.site-navigation {
+.menu {
   display: flex;
   gap: 52px;
+  
+ 
 }
 
 .container {

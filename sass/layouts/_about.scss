@@ -1,26 +1,9 @@
 /* ховаю заголовок (наші особливості) */
-.feature-list-h2 {
+.feature-list__h2 {
   font-size: 0px;
 }
 .pravylo {
   flex-basis: calc((100% - 30px - 30px - 30px) / 4);
-}
-
-/* колір заголовків.. а колір тексту визначається як основний на сторінці */
-.list.title h3 {
-  color: var(--color-text-title);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.container-feature-list {
-  display: flex;
-  gap: 30px;
 }
 
 .pravylo__icon {
@@ -33,13 +16,33 @@
   border-radius: 4%;
 }
 
-.container-photo-robota {
+/* колір заголовків.. а колір тексту визначається як основний на сторінці */
+
+.feature-list__title {
+  color: var(--color-text-title);
+   font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature-list__container {
+  display: flex;
+  gap: 30px;
+}
+
+
+
+.container-photo {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.kartyna {
+.container-photo__kartyna {
   display: block;
   width: 100%;
   height: auto;
@@ -48,20 +51,35 @@
 .photo-robota {
   padding-top: 0;
 
-  & h2 {
-    color: var(--color-text-title);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: auto;
-    margin-bottom: 50px;
-  }
+  // & h2 {
+  //   color: var(--color-text-title);
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   font-size: 36px;
+  //   line-height: 1.16;
+  //   text-align: center;
+  //   letter-spacing: 0.03em;
+  //   margin-top: auto;
+  //   margin-bottom: 50px;
+  // }
 }
 
-.robota {
+.photo-robota__h { color: var(--color-text-title);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+
+  .photo-robota__mar { 
+    margin-top: auto;
+    margin-bottom: 50px;  
+  }
+
+
+.container-photo__robota {
   display: block;
 }
 
@@ -86,8 +104,8 @@
   justify-content: center;
   align-items: center;
 
-  .robota:hover &,
-  .robota:focus & {
+  .container-photo__robota:hover &,
+  .container-photo__robota:focus & {
     transform: translateY(0);
   }
 
